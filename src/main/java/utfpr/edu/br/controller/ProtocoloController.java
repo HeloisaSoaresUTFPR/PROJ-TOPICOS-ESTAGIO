@@ -30,7 +30,7 @@ public class ProtocoloController {
                         //MÉTODO DELETE
 
 
-    @DeleteMapping("/delete/{id}") //
+    @DeleteMapping("/delete/{id}") //tipo api
     public ResponseEntity delete(@PathVariable("id") Long id){
         try{
             protocoloService.delete(id);
@@ -49,7 +49,7 @@ public class ProtocoloController {
 
         try{
             String msg = validacao(alterProtocolo);
-            if (msg.isEmpty()){
+            if (msg.isEmpty()){ //verfiica msg vazia isEmpty
                 Protocolo protocoloAlterado = protocoloService.alterar(alterProtocolo);
                 return ResponseEntity.ok(protocoloAlterado);
             }

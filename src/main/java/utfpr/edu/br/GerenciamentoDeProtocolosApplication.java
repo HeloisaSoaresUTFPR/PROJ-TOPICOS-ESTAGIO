@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GerenciamentoDeProtocolosApplication {
+public class GerenciamentoDeProtocolosApplication {// iniciação da aplicação
 
 	public static void main(String[] args) {
 		SpringApplication.run(GerenciamentoDeProtocolosApplication.class, args);

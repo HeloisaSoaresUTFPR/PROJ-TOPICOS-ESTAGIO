@@ -9,11 +9,11 @@ import utfpr.edu.br.repository.ProtocoloRepository;
 @Service    //regra de negocio
 public class ProtocoloService {
 
-    @Autowired  // instancia
+    @Autowired
     private ProtocoloRepository protocoloRepository;
 
 
-    // função salvar os dados
+    // função salvar os dados no banco
     public Protocolo salvar(Protocolo novoProtocolo) {
         Protocolo protocoloSalvo = protocoloRepository.save(novoProtocolo); // autom sql
         return protocoloSalvo;
