@@ -1,0 +1,2 @@
+insert into protocolo(id, destinatario, processo, datarecebimento, dataentrega, especificacoes, novo,
+andamento, concluido, defeito) values(100, 'teste', 'processo', '17/05/2021', '17/05/2021', 'Teste especificação', 1, 0, 0, 0);
